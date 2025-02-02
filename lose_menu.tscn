@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://haxc8cri4hkq"]
+
+[ext_resource type="Texture2D" uid="uid://dbpms5086nqob" path="res://red.png" id="1_s2801"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ieaub"]
+outline_size = 6
+outline_color = Color(0.0267552, 0.0263926, 0, 1)
+
+[node name="lose_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.15454, 1.17292)
+texture = ExtResource("1_s2801")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 45.0
+offset_right = 418.0
+offset_bottom = 68.0
+scale = Vector2(6.94867, 6.85998)
+text = "you lose !"
+label_settings = SubResource("LabelSettings_ieaub")
